@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import dataReducer from "./slice/slices"
-const store = configureStore({
-    reducer:{
-        data: dataReducer
-    }
+import { catReducer } from "./slice/catSlice";
 
+const store = configureStore({
+    reducer: {
+        cats: catReducer,
+    }
 })
 export default store
