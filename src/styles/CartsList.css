@@ -63,3 +63,10 @@
       width: 100%;
     }
   }
+
+.more-info-button{
+  color: #3498db;
+  border: 0;
+  border-color: transparent;
+  font-weight: bold;
+}
