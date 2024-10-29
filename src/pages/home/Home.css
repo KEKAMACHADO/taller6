@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Reem+Kufi:wght@400..700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: "DynaPuff", serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+  margin: 60px 0;
+}
+
+.hero.reverse {
+  flex-direction: column; 
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 10px;
+}
+
+.hero-image {
+  width: 100%; 
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.text-content {
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.text-content h2 {
+  font-size: 3em;
+  color: #9db5f8;
+  margin: 0 0 10px 0;
+}
+
+.text-content p {
+  font-size: 1em;
+  margin-top: 20px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.final-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px 0;
+}
+
+.phrase {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+footer {
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  margin-top: 40px; /* Añade espacio antes del footer */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  color: #333;
+  font-size: 0.9em;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+  }
+
+  .hero.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .hero-content {
+    flex-direction: row;
+  }
+
+  .hero-image {
+    width: 40%;
+  }
+
+  .text-content {
+    width: 55%;
+  }
+
+  .final-section {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .phrase {
+    width: auto;
+    flex: 1;
+    margin: 0 10px;
+  }
+}
